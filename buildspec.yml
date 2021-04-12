@@ -1,0 +1,8 @@
+version: 0.2
+
+#phases represents the build phases during which you can instruct CodeBuild to run commands.
+phases:
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo  BUild started on 'date'
