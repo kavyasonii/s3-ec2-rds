@@ -141,9 +141,7 @@
     Resources:
       S3Bucket:
         Type: 'AWS::S3::Bucket'
-        DeletionPolicy: Retain
-        Properties:
-          BucketName: mytaskbucket
+       
 
       DBInstance:
         Type: 'AWS::RDS::DBInstance'
@@ -175,9 +173,3 @@
               FromPort: '22'
               ToPort: '22'
               CidrIp: !Ref SSHLocation
-
-    Outputs:
-      BucketName:
-        Value:
-          Ref: S3Bucket
-        Description: Name of the sample Amazon S3 bucket.
