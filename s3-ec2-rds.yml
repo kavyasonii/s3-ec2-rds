@@ -142,8 +142,7 @@
       S3Bucket:
         Type: 'AWS::S3::Bucket'
         DeletionPolicy: Retain
-        Properties:
-          BucketName: mytaskbucket
+        
 
       DBInstance:
         Type: 'AWS::RDS::DBInstance'
