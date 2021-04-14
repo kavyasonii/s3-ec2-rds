@@ -8,6 +8,7 @@ Parameters:
     MinLength: '1'
     MaxLength: '255'
     AllowedPattern: '[\x20-\x7E]*'
+    Default: Keyname
 
   InstanceType:
     Description: WebServer EC2 instance type
