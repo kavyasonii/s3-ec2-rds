@@ -141,7 +141,6 @@
     Resources:
       S3Bucket:
         Type: 'AWS::S3::Bucket'
-       
 
       DBInstance:
         Type: 'AWS::RDS::DBInstance'
@@ -173,3 +172,4 @@
               FromPort: '22'
               ToPort: '22'
               CidrIp: !Ref SSHLocation
+
